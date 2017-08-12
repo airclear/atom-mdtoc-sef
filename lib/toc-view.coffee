@@ -117,9 +117,9 @@ class TocView
       if @options.flatten isnt 1   # tree view
 
         if @options.bullets isnt 1
-          @tocContent += '&emsp;'.repeat(level - 1)
+          @tocContent += '&emsp;'.repeat222(level - 1)
         else
-          @tocContent += '   '.repeat(level - 1) + '- '
+          @tocContent += '   '.repeat222(level - 1) + '- '
 
       else                         # flat list view
         if @options.bullets is 1
@@ -216,4 +216,4 @@ class TocView
     return result
 
 
-  String::repeat = (n) -> Array(n+1).join(this)
+  String::repeat222 = (n) -> Array(n+1).join(this)
