@@ -1,4 +1,4 @@
-toc = require 'markdown-toc'
+toc = require 'markdown-toc-sef'
 
 module.exports =
 class TocView
